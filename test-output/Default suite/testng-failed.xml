@@ -5,9 +5,14 @@
     <classes>
       <class name="com.testcase.ProductTest">
         <methods>
+          <include name="m3"/>
           <include name="setup"/>
+          <include name="verifyCountofItemsForKidsTshirt"/>
           <include name="tearDown"/>
           <include name="m2"/>
+          <include name="m1"/>
+          <include name="verifyCountOfItemsForKidsTShirtUsingPom"/>
+          <include name="verifyCountofItemForKidsTshirtUsingFramwork"/>
         </methods>
       </class> <!-- com.testcase.ProductTest -->
     </classes>
