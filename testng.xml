@@ -9,6 +9,7 @@
             <class name="com.base.TestBase"/>
             <!-- Product Test -->
             <class name="com.testcase.ProductTest"/>
+            <class name="com.testcase.TestNgProductTestCase"/>
         </classes>
     </test> <!-- Test -->
     

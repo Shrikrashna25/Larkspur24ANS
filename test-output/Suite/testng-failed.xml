@@ -5,13 +5,23 @@
     <classes>
       <class name="com.testcase.ProductTest">
         <methods>
-          <include name="setup"/>
           <include name="verifyCountofItemsForKidsTshirt"/>
+          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="m2"/>
+          <include name="m4"/>
           <include name="verifyCountOfItemsForKidsTShirtUsingPom"/>
           <include name="verifyCountofItemForKidsTshirtUsingFramwork"/>
         </methods>
       </class> <!-- com.testcase.ProductTest -->
+      <class name="com.testcase.TestNgProductTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyCountofItemForKidsTshirtUsingFramework"/>
+          <include name="verifyCountOfItemsForKidsTShirtUsingPom"/>
+        </methods>
+      </class> <!-- com.testcase.TestNgProductTestCase -->
     </classes>
   </test> <!-- BaseAndProductTests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
