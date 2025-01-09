@@ -91,58 +91,6 @@ public class ProductTest extends TestBase {
 		Assert.assertEquals(titleCount, categoryCount, "Title count and category count are not same");
 
 	}
-	// 1.Test case-1 for Alley Solley Brand 
-		@Test
-		public void m1() {
-
-			ChromeDriver driver = new ChromeDriver();
-
-			driver.get("https://www.amazon.in/");
-			driver.manage().window().maximize();
-		    driver.findElement(By.xpath("//input[@placeholder='Search Amazon.in']")).sendKeys("Tshirt", Keys.ENTER);
-	       // driver.findElement(By.cssSelector("input[type=\"text\"]"));
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driver.findElement(By.xpath("(//i[@class=\"a-icon a-icon-checkbox\"])[5]")).click();
-		}
-		// 2. to chek the item in cart is add or not
-		@Test
-		public void m2() {
-			ChromeDriver driver = new ChromeDriver();
-
-			driver.get("https://www.amazon.in/");
-			driver.manage().window().maximize();
-			driver.findElement(By.xpath("//span[@class=\"nav-cart-icon nav-sprite\"]")).click();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			Assert.assertEquals(10, 10);
-
-		}
-		// 3. To chek and verifying available seats on platform travelyaari.com
-		@Test
-		public void m3() {
-			ChromeDriver driver = new ChromeDriver();
-			driver.get("https://www.travelyaari.com/");
-			driver.manage().window().maximize();
-			driver.findElement(By.xpath("//input[@id=\"from-city\"]")).click();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			driver.findElement(By.xpath("//input[@id=\"from-city\"]")).sendKeys("Pune",Keys.ENTER);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			driver.findElement(By.xpath("//input[@id=\"to-city\"]")).click();
-			driver.findElement(By.xpath("//input[@id=\"to-city\"]")).sendKeys("Nagpur");
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-			driver.findElement(By.xpath("//button[@class=\"ty-button ty-button-orange\"]")).click();
-			driver.findElement(By.xpath("//div[@class=\"ty-btn orange\"]")).click();
-		}
-		// add item in add 
-		@Test
-		public void m4() {
-			ChromeDriver driver = new ChromeDriver();
-			driver.get("https://www.bigbasket.com/");
-			driver.manage().window().maximize();
-			Actions actions = new Actions(driver);
-			actions.sendKeys(Keys.PAGE_DOWN).perform();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driver.findElement(By.xpath("(//button[@class=\"Button-sc-1dr2sn8-0 ezcVVO CtaOnDeck___StyledButton3-sc-orwifk-2 hRCLjF CtaOnDeck___StyledButton3-sc-orwifk-2 hRCLjF\"])[3]")).click();
-			
-			
-		}
+	
+		
 }

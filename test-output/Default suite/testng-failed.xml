@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcase.TestNgProductTestCase">
+      <class name="com.testcase.ProductTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifyCountofItemsForKidsTshirt"/>
+          <include name="verifyCountOfItemsForKidsTShirtUsingPom"/>
         </methods>
-      </class> <!-- com.testcase.TestNgProductTestCase -->
+      </class> <!-- com.testcase.ProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
